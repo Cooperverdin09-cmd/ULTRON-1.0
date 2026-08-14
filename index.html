@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="ULTRON 1.0 AI Assistant">
+
+  <title>ULTRON 1.0</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="header">
+      <div class="identity">
+
+        <div class="ultron-icon">
+          U
+        </div>
+
+        <div>
+          <h1>ULTRON 1.0</h1>
+          <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <section id="chat" class="chat">
+
+      <div class="message ultron-message">
+        <div class="label">ULTRON</div>
+
+        <div class="message-text">
+          Core interface initialized.<br>
+          AI systems awaiting connection.
+        </div>
+      </div>
+
+    </section>
+
+    <section class="input-area">
+
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="Speak to Ultron..."
+        autocomplete="off"
+      >
+
+      <button id="sendButton">
+        SEND
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
