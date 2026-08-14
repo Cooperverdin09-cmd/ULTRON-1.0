@@ -1,0 +1,22 @@
+{
+  "name": "ULTRON 1.0",
+  "short_name": "ULTRON",
+  "description": "ULTRON 1.0 AI Assistant",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/ultron-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/ultron-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
