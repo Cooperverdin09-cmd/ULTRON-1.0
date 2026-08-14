@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #050505;
+  color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 760px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #080808;
+}
+
+.header {
+  padding: 18px;
+  border-bottom: 1px solid #292929;
+  background: #090909;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ultron-icon {
+  width: 58px;
+  height: 58px;
+  border: 2px solid #00ff66;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ff66;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow:
+    0 0 10px rgba(0, 255, 102, 0.35),
+    inset 0 0 12px rgba(0, 255, 102, 0.12);
+}
+
+h1 {
+  margin: 0;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.status {
+  margin-top: 5px;
+  color: #00ff66;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #00ff66;
+}
+
+.chat {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #111111;
+  line-height: 1.5;
+}
+
+.ultron-message {
+  border-left: 3px solid #00ff66;
+}
+
+.you-message {
+  border-left: 3px solid #777777;
+}
+
+.label {
+  margin-bottom: 7px;
+  color: #999999;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.message-text {
+  white-space: pre-wrap;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+  padding: 14px;
+  border-top: 1px solid #292929;
+  background: #090909;
+}
+
+#messageInput {
+  min-width: 0;
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  outline: none;
+  background: #111111;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#messageInput:focus {
+  border-color: #00ff66;
+  box-shadow: 0 0 8px rgba(0, 255, 102, 0.15);
+}
+
+#messageInput::placeholder {
+  color: #777777;
+}
+
+#sendButton {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #00ff66;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#sendButton:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 14px;
+  }
+
+  .chat {
+    padding: 14px;
+  }
+
+  .input-area {
+    padding: 10px;
+  }
+
+  #sendButton {
+    padding: 14px;
+  }
+}
